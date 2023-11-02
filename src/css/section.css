@@ -1,0 +1,111 @@
+.container {
+    background-color: hsl(0, 0%, 98%);
+    min-height: 100vh;
+}
+
+.container .header {
+    display: flex;
+    align-items: center;
+    min-height: 90px;
+    padding: 0 40px;
+    gap: 62px;
+}
+
+.container .header .navegation {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.container .header .navegation ul {
+    display: flex;
+    gap: 40px;
+}
+
+.container .header .navegation ul li a,
+.container .header .navegation ul .features,
+.container .header .navegation ul .company {
+    font-size: 14px;
+    font-weight: 600;
+    color: hsl(0, 0%, 41%);
+    cursor: pointer;
+}
+
+.container .header .navegation ul li a:hover,
+.container .header .navegation ul .features:hover,
+.container .header .navegation ul .company:hover {
+    color: hsl(0, 0%, 8%);
+}
+
+.container .header .navegation ul .features,
+.container .header .navegation ul .company {
+    display: flex;
+    align-items: center;
+    width: 80px;
+    position: relative;
+    background: url(../images/icon-arrow-down.svg) no-repeat top 5px right;
+}
+
+.container .header .navegation ul .features .features-options,
+.container .header .navegation ul .company .company-options {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 40px;
+    gap: 15px;
+    border-radius: 10px;
+    padding: 20px 24px 24px;
+    box-shadow: 0px 0px 40px hsla(0, 2%, 17%, 0.2);
+}
+
+.container .header .navegation ul .features .features-options {
+    right: 0px;
+    width: 155px;
+}
+
+.container .header .navegation ul .features .features-options .option-1 {
+    background: url(../images/icon-todo.svg) no-repeat left;
+    padding: 10px 0 10px 30px;
+}
+
+.container .header .navegation ul .features .features-options .option-2 {
+    background: url(../images/icon-calendar.svg) no-repeat left center;
+    padding: 10px 0 10px 30px;
+}
+
+.container .header .navegation ul .features .features-options .option-3 {
+    background: url(../images/icon-reminders.svg) no-repeat left center;
+    padding: 10px 0 10px 30px;
+}
+
+.container .header .navegation ul .features .features-options .option-4 {
+    background: url(../images/icon-planning.svg) no-repeat left center;
+    padding: 10px 0 10px 30px;
+}
+
+.container .header .navegation ul .company .company-options {
+    width: 115px;
+}
+
+.container .header .navegation ul li .register {
+    padding: 12px 20px;
+    border: 2px solid hsl(0, 1%, 62%);
+    border-radius: 14px;
+}
+
+.container .header .navegation ul li .register:hover {
+    border-color: hsl(0, 0%, 8%);
+}
+
+/* ACTIVE */
+.container .header .navegation ul .features.active .features-options,
+.container .header .navegation ul .company.active .company-options {
+    display: flex;
+}
+
+.container .header .navegation ul .features.active,
+.container .header .navegation ul .company.active {
+    background: url(../images/icon-arrow-up.svg) no-repeat top 5px right;
+}
+
+/* active in .container .features and .company */
