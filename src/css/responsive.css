@@ -38,17 +38,7 @@
     }
 
     .container .header .navegation {
-        flex-direction: column;
-        background-color: hsl(0, 0%, 98%);
-        position: absolute;
-        justify-content: start;
-        top: 0;
-        right: 0;
-        width: 60%;
-        height: 100%;
-        padding: 80px 24px;
         display: none;
-        z-index: 1;
     }
 
     .container .header .navegation ul {
@@ -164,6 +154,7 @@
         height: 100%;
         right: 0;
         position: absolute;
+        animation: navegation .4s ease-in-out;
     }
 
     .container.active .header .menu-hamburguer .hamburguer {
@@ -182,6 +173,23 @@
 
     .container.active .header .navegation {
         display: block;
+        flex-direction: column;
+        background-color: hsl(0, 0%, 98%);
+        position: absolute;
+        justify-content: start;
+        top: 0;
+        right: 0;
+        width: 60%;
+        height: 100%;
+        padding: 80px 24px;
+        z-index: 1;
+        animation: navegation .4s ease-in-out;
+    }
+
+    @keyframes navegation {
+        0% { right: -60%; }
+
+        100% { right: 0%; }
     }
 }
 
