@@ -8,7 +8,7 @@
     align-items: center;
     min-height: 90px;
     padding: 0 40px;
-    gap: 62px;
+    gap: 30px;
 }
 
 .container .header .navegation {
@@ -51,11 +51,12 @@
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 40px;
+    top: 30px;
     gap: 15px;
     border-radius: 10px;
     padding: 20px 24px 24px;
     box-shadow: 0px 0px 40px hsla(0, 2%, 17%, 0.2);
+    z-index: 1;
 }
 
 .container .header .navegation ul .features .features-options {
@@ -97,6 +98,69 @@
     border-color: hsl(0, 0%, 8%);
 }
 
+.container .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 100vh;
+    padding: 20px;
+    position: relative;
+}
+
+.container .content .text-content {
+    max-width: 520px;
+    padding-top: 110px;
+}
+
+.container .content .text-content .title {
+    font-size: 78.3px;
+    margin-bottom: 47px;
+}
+
+.container .content .text-content .text {
+    font-size: 18.1px;
+    font-weight: 500;
+    line-height: 28px;
+    color: hsl(0, 0%, 46%);
+    max-width: 480px;
+    margin-bottom: 52px;
+}
+
+.container .content .text-content .button {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 19px 29px;
+    border-radius: 15px;
+    border: 1px solid transparent;
+    color: hsl(0, 0%, 98%);
+    background-color: hsl(0, 0%, 8%);
+    margin-bottom: 107px;
+}
+
+.container .content .text-content .button:hover {
+    color: hsl(0, 0%, 8%);
+    background-color: hsl(0, 0%, 98%);
+    border: 1px solid hsl(0, 0%, 8%);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.container .content .text-content .brands {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 482px;
+}
+
+.container .content .desktop {
+    width: 37%;
+}
+
+.container .content .mobile {
+    display: none;
+}
+
 /* ACTIVE */
 .container .header .navegation ul .features.active .features-options,
 .container .header .navegation ul .company.active .company-options {
@@ -107,5 +171,3 @@
 .container .header .navegation ul .company.active {
     background: url(../images/icon-arrow-up.svg) no-repeat top 5px right;
 }
-
-/* active in .container .features and .company */

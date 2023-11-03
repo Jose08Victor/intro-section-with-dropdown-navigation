@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="src/images/favicon-32x32.png" type="image/x-icon">
-    <title>Intro Section with Dropdown Navigation</title>
+    <title>Intro Section With Dropdown Navigation</title>
     <link rel="stylesheet" href="src/css/reset.css">
     <link rel="stylesheet" href="src/css/section.css">
     <link rel="stylesheet" href="src/css/responsive.css">
@@ -23,8 +23,8 @@
             <nav class="navegation">
 
                 <ul class="navegation-content">
-                    <li class="features active">
-                        <p>Features</p>
+                    <li class="features">
+                        <p id="features">Features</p>
 
                         <ul class="features-options">
                             <li><a href="#" class="option-1">Todo List</a></li>
@@ -37,8 +37,8 @@
                         </ul>
                     </li>
 
-                    <li class="company active">
-                        <p>Company</p>
+                    <li class="company">
+                        <p id="company">Company</p>
 
                         <ul class="company-options">
                             <li><a href="#">History</a></li>
@@ -72,12 +72,25 @@
                 </p>
 
                 <button class="button">Learn more</button>
+
+                <div class="brands">
+                    <img src="src/images/client-databiz.svg" alt="Databiiz">
+
+                    <img src="src/images/client-audiophile.svg" alt="Audiophile">
+
+                    <img src="src/images/client-meet.svg" alt="Meet">
+
+                    <img src="src/images/client-maker.svg" alt="Maker">
+                </div>
             </div>
-            <!-- <img src="src/images/image-hero-desktop.png" alt=""> -->
+            
+            <img class="desktop" src="src/images/image-hero-desktop.png">
+
+            <img class="mobile" src="src/images/image-hero-mobile.png">
         </div>
     </section>
 
-
+    <script src="src/js/script.js"></script>
 </body>
 
 </html>
